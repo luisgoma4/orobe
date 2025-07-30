@@ -1,34 +1,42 @@
 <!DOCTYPE html>
+<!-- 
+  Organización de imágenes de productos:
+  /images/
+    producto1-frontal.jpg
+    producto1-trasera.jpg
+    producto2-frontal.jpg
+    producto2-trasera.jpg
+  Cada producto tendrá dos imágenes: "frontal" y "trasera" para el efecto hover.
+-->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OROBE</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-    }
-    img {
-      max-width: 600px;
-      height: auto;
-    }
-    h1 {
-      margin-top: 20px;
-      font-size: 2rem;
-      color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
 </head>
 <body>
-  <img src="OROBE.1.jpeg" alt="Logo OROBE">
-  <h1>Ivan is Stupid</h1>
+  <header>
+    <img src="OROBE.1.jpeg" alt="Logo OROBE">
+    <h1>OROBE</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bienvenido</h2>
+      <p>Esta es la web oficial de OROBE. Descubre nuestra filosofía y diseño minimalista.</p>
+      <a href="sabermas.html" class="brand-button">Saber más</a>
+    </section>
+    <section>
+      <h2>Nuestros productos</h2>
+      <p>Descubre la colección OROBE completa.</p>
+      <a href="productos.html" class="brand-button">Ver productos</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 OROBE. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

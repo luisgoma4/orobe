@@ -1,0 +1,41 @@
+/* ======== GALERÍA DE PRODUCTOS ======== */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+.producto {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.producto img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+/* Por defecto solo se ve la imagen frontal */
+.producto .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Al pasar el ratón, se oculta la frontal y aparece la trasera */
+.producto:hover .front {
+  opacity: 0;
+}
+.producto:hover .back {
+  opacity: 1;
+}
+
+.producto h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
