@@ -195,19 +195,25 @@ class LanguageSwitcher {
         if (productsTranslations.items) {
             const product1Name = document.querySelector('[data-translate="product1-name"]');
             const product1Desc = document.querySelector('[data-translate="product1-description"]');
+            const product1Cta = document.querySelector('[data-translate="product1-cta"]');
             const product2Name = document.querySelector('[data-translate="product2-name"]');
             const product2Desc = document.querySelector('[data-translate="product2-description"]');
+            const product2Cta = document.querySelector('[data-translate="product2-cta"]');
             const product3Name = document.querySelector('[data-translate="product3-name"]');
             const product3Desc = document.querySelector('[data-translate="product3-description"]');
+            const product3Cta = document.querySelector('[data-translate="product3-cta"]');
             const product4Name = document.querySelector('[data-translate="product4-name"]');
             const product4Desc = document.querySelector('[data-translate="product4-description"]');
 
             if (product1Name) product1Name.textContent = productsTranslations.items.product1.name;
             if (product1Desc) product1Desc.textContent = productsTranslations.items.product1.description;
+            if (product1Cta) product1Cta.textContent = productsTranslations.items.product1.cta;
             if (product2Name) product2Name.textContent = productsTranslations.items.product2.name;
             if (product2Desc) product2Desc.textContent = productsTranslations.items.product2.description;
+            if (product2Cta) product2Cta.textContent = productsTranslations.items.product2.cta;
             if (product3Name) product3Name.textContent = productsTranslations.items.product3.name;
             if (product3Desc) product3Desc.textContent = productsTranslations.items.product3.description;
+            if (product3Cta) product3Cta.textContent = productsTranslations.items.product3.cta;
             if (product4Name) product4Name.textContent = productsTranslations.items.product4.name;
             if (product4Desc) product4Desc.textContent = productsTranslations.items.product4.description;
         }
