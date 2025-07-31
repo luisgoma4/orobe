@@ -40,12 +40,11 @@
 
 /* Filter Section */
 .filter-section {
-  padding: var(--space-12) 0;
+  padding: var(--space-8) 0;
   background: white;
   border-bottom: 1px solid var(--color-border);
-  position: sticky;
-  top: 80px;
-  z-index: var(--z-sticky);
+  position: relative;
+  z-index: 1;
 }
 
 .filter-section .container {

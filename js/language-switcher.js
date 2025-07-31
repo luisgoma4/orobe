@@ -217,6 +217,21 @@ class LanguageSwitcher {
             if (product4Name) product4Name.textContent = productsTranslations.items.product4.name;
             if (product4Desc) product4Desc.textContent = productsTranslations.items.product4.description;
         }
+
+        // Update badges
+        if (productsTranslations.badges) {
+            const badgeNew = document.querySelectorAll('[data-translate="badge-new"]');
+            const badgeFeatured = document.querySelectorAll('[data-translate="badge-featured"]');
+            
+            badgeNew.forEach(badge => badge.textContent = productsTranslations.badges.new);
+            badgeFeatured.forEach(badge => badge.textContent = productsTranslations.badges.featured);
+        }
+
+        // Update quick view buttons
+        const quickViewBtns = document.querySelectorAll('[data-translate="quick-view"]');
+        if (productsTranslations.quickView) {
+            quickViewBtns.forEach(btn => btn.textContent = productsTranslations.quickView);
+        }
     }
 
     updateAboutPage(aboutTranslations) {
