@@ -485,9 +485,7 @@ h3:contains("OROBE") {
 }
 
 /* Specific targeting for text content containing OROBE */
-*:not(script):not(style) {
-  /* This will be handled by JavaScript for dynamic content */
-}
+/* This will be handled by JavaScript for dynamic content */
 
 /* ======== RESPONSIVE DESIGN ======== */
 @media (max-width: 768px) {
