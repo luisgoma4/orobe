@@ -1,31 +1,605 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saber más sobre OROBE</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre OROBE - La Historia Detrás de la Marca</title>
+  <meta name="description" content="Descubre la historia y filosofía detrás de OROBE. Conoce el significado profundo de nuestro nombre y nuestra visión del diseño minimalista.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/modern-style.css">
 </head>
 <body>
-    <header>
-        <img src="images/Unknown.png" alt="Logo de OROBE" />
-        <h1>Sobre OROBE</h1>
-    </header>
-    <main>
-        <section>
-            <h2>El significado de OROBE</h2>
-            <p>
-                La palabra “orbe” proviene del latín <em>orbis</em>, que significa “círculo” o “mundo”. Esta raíz está asociada a la idea de totalidad y perfección, evocando la forma perfecta del círculo y su representación del universo. A lo largo de la historia, el orbe ha sido símbolo de poder y eternidad en distintas culturas y mitologías.
-            </p>
-            <p>
-                Es frecuente encontrar en la iconografía antigua a dioses y figuras de autoridad sosteniendo un orbe, como emblema de dominio y soberanía sobre el mundo. Esta visión inspira a la marca OROBE a transmitir equilibrio, elegancia y universalidad en cada una de sus creaciones.
-            </p>
-        </section>
-    </main>
-    <footer>
-        © 2025 OROBE. Todos los derechos reservados.
-    </footer>
+  <!-- Modern Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/Unknown.png" alt="OROBE Logo">
+        <h1>OROBE</h1>
+      </div>
+      
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-translate="home">Inicio</a></li>
+          <li><a href="productos.html" class="nav-link" data-translate="products">Productos</a></li>
+          <li><a href="sabermas.html" class="nav-link" data-translate="about">Sobre Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link" data-translate="contact">Contacto</a></li>
+        </ul>
+        
+        <div class="language-toggle">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-hero-content">
+        <h1 class="about-title" data-translate="about-title">Sobre OROBE</h1>
+        <p class="about-subtitle" data-translate="about-subtitle">Donde la tradición se encuentra con la innovación</p>
+        <div class="hero-visual">
+          <div class="orb-animation">
+            <div class="orb"></div>
+            <div class="orb-rings">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-2" style="gap: var(--space-16); align-items: center;">
+        <div class="story-content">
+          <h2 data-translate="meaning-title">El Significado de OROBE</h2>
+          <p data-translate="meaning-content1">
+            La palabra "orbe" proviene del latín <em>orbis</em>, que significa "círculo" o "mundo". Esta raíz está asociada a la idea de totalidad y perfección, evocando la forma perfecta del círculo y su representación del universo.
+          </p>
+          <p data-translate="meaning-content2">
+            Es frecuente encontrar en la iconografía antigua a dioses y figuras de autoridad sosteniendo un orbe, como emblema de dominio y soberanía sobre el mundo. Esta visión inspira a la marca OROBE a transmitir equilibrio, elegancia y universalidad en cada una de sus creaciones.
+          </p>
+        </div>
+        <div class="story-visual">
+          <div class="etymology-card">
+            <div class="etymology-header">
+              <h3>ORBE</h3>
+              <span class="etymology-origin">Del latín <em>orbis</em></span>
+            </div>
+            <div class="etymology-meanings">
+              <div class="meaning-item">
+                <span class="meaning-number">01</span>
+                <span class="meaning-text" data-translate="etymology-meaning-1">Círculo perfecto</span>
+              </div>
+              <div class="meaning-item">
+                <span class="meaning-number">02</span>
+                <span class="meaning-text" data-translate="etymology-meaning-2">Mundo, universo</span>
+              </div>
+              <div class="meaning-item">
+                <span class="meaning-number">03</span>
+                <span class="meaning-text" data-translate="etymology-meaning-3">Totalidad, perfección</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="section" style="background: var(--color-background-alt);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--space-16);">
+        <h2 data-translate="philosophy-title">Nuestra Filosofía</h2>
+        <p style="font-size: var(--text-lg); max-width: 600px; margin: 0 auto; color: var(--color-text-light);" data-translate="philosophy-subtitle">
+          Creemos en la belleza de la simplicidad y en el poder del diseño consciente
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-3">
+        <div class="philosophy-card">
+          <div class="philosophy-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 data-translate="philosophy-values-timeless-title">Atemporalidad</h3>
+          <p data-translate="philosophy-values-timeless-description">Creamos piezas que trascienden las modas pasajeras, diseñadas para perdurar tanto en estilo como en calidad.</p>
+        </div>
+        
+        <div class="philosophy-card">
+          <div class="philosophy-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 data-translate="philosophy-values-excellence-title">Excelencia</h3>
+          <p data-translate="philosophy-values-excellence-description">Cada detalle es meticulosamente considerado, desde la concepción hasta la realización final de cada producto.</p>
+        </div>
+        
+        <div class="philosophy-card">
+          <div class="philosophy-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3 data-translate="philosophy-values-authenticity-title">Autenticidad</h3>
+          <p data-translate="philosophy-values-authenticity-description">Mantenemos la integridad de nuestros valores en cada decisión, creando productos genuinos y significativos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--space-16);">
+        <h2 data-translate="journey-title">Nuestro Viaje</h2>
+        <p style="font-size: var(--text-lg); color: var(--color-text-light);" data-translate="journey-subtitle">
+          La evolución de una visión hacia una realidad tangible
+        </p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2023</div>
+            <h3 data-translate="timeline-2023-title">La Visión</h3>
+            <p data-translate="timeline-2023-description">Nace la idea de crear una marca que combine la elegancia clásica con la funcionalidad moderna, inspirada en los símbolos universales de perfección.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2024</div>
+            <h3 data-translate="timeline-2024-title">Desarrollo</h3>
+            <p data-translate="timeline-2024-description">Comenzamos el proceso de diseño y desarrollo, colaborando con artesanos especializados para dar vida a nuestras primeras creaciones.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2025</div>
+            <h3 data-translate="timeline-2025-title">Lanzamiento</h3>
+            <p data-translate="timeline-2025-description">OROBE se presenta al mundo con su primera colección, estableciendo nuevos estándares en diseño minimalista y calidad excepcional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section" style="background: var(--gradient-primary); color: white;">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--space-16);">
+        <h2 style="color: white;" data-translate="values-title">Nuestros Valores</h2>
+        <p style="font-size: var(--text-lg); color: rgba(255, 255, 255, 0.8);" data-translate="values-subtitle">
+          Los principios que guían cada decisión y cada creación
+        </p>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-number">01</div>
+          <h3 data-translate="values-sustainability-title">Sostenibilidad</h3>
+          <p data-translate="values-sustainability-description">Comprometidos con prácticas responsables que respeten nuestro planeta y las futuras generaciones.</p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-number">02</div>
+          <h3 data-translate="values-innovation-title">Innovación</h3>
+          <p data-translate="values-innovation-description">Constantemente exploramos nuevas formas de mejorar y evolucionar, manteniendo siempre nuestra esencia.</p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-number">03</div>
+          <h3 data-translate="values-craftsmanship-title">Artesanía</h3>
+          <p data-translate="values-craftsmanship-description">Valoramos el trabajo manual y la dedicación que solo los verdaderos artesanos pueden aportar.</p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-number">04</div>
+          <h3 data-translate="values-community-title">Comunidad</h3>
+          <p data-translate="values-community-description">Creemos en construir relaciones duraderas con nuestros clientes, colaboradores y la sociedad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="container">
+        <p class="footer-text" data-translate="copyright">© 2025 OROBE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/language-switcher.js"></script>
+  <script src="js/animations.js"></script>
+
+  <style>
+    /* About Page Specific Styles */
+    .about-hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: calc(80px + var(--space-20)) 0 var(--space-20);
+      background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero-content {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-title {
+      font-size: var(--text-6xl);
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: var(--space-6);
+      letter-spacing: 0.02em;
+    }
+
+    .about-subtitle {
+      font-size: var(--text-2xl);
+      color: var(--color-text-light);
+      margin-bottom: var(--space-12);
+      font-weight: 300;
+    }
+
+    /* Orb Animation */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      margin-top: var(--space-16);
+    }
+
+    .orb-animation {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .orb {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient-accent);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 40px rgba(0, 102, 255, 0.3);
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    .orb-rings {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ring {
+      position: absolute;
+      border: 2px solid rgba(0, 102, 255, 0.2);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ring-1 {
+      width: 120px;
+      height: 120px;
+      animation: rotate 20s linear infinite;
+    }
+
+    .ring-2 {
+      width: 160px;
+      height: 160px;
+      animation: rotate 30s linear infinite reverse;
+    }
+
+    .ring-3 {
+      width: 200px;
+      height: 200px;
+      animation: rotate 40s linear infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.1); }
+    }
+
+    @keyframes rotate {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Etymology Card */
+    .etymology-card {
+      background: white;
+      border-radius: var(--radius-2xl);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--color-border);
+    }
+
+    .etymology-header {
+      text-align: center;
+      margin-bottom: var(--space-8);
+      padding-bottom: var(--space-6);
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    .etymology-header h3 {
+      font-size: var(--text-4xl);
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: var(--space-2);
+      letter-spacing: 0.1em;
+    }
+
+    .etymology-origin {
+      font-size: var(--text-lg);
+      color: var(--color-accent);
+      font-style: italic;
+    }
+
+    .meaning-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+
+    .meaning-number {
+      background: var(--color-accent);
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-sm);
+      font-weight: 600;
+    }
+
+    .meaning-text {
+      font-size: var(--text-base);
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    /* Philosophy Cards */
+    .philosophy-card {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-base);
+      border: 1px solid var(--color-border);
+    }
+
+    .philosophy-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .philosophy-icon {
+      margin-bottom: var(--space-6);
+      display: flex;
+      justify-content: center;
+    }
+
+    .philosophy-card h3 {
+      font-size: var(--text-xl);
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .philosophy-card p {
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-accent);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: var(--space-12);
+      display: flex;
+      align-items: center;
+    }
+
+    .timeline-item:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    .timeline-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .timeline-marker {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      box-shadow: 0 0 0 4px white, 0 0 0 6px var(--color-accent);
+    }
+
+    .timeline-content {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-md);
+      width: calc(50% - 40px);
+      border: 1px solid var(--color-border);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-right: auto;
+      margin-left: 40px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-left: auto;
+      margin-right: 40px;
+    }
+
+    .timeline-year {
+      background: var(--color-accent);
+      color: white;
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: var(--space-3);
+    }
+
+    .timeline-content h3 {
+      font-size: var(--text-xl);
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .timeline-content p {
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+
+    /* Values Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-8);
+    }
+
+    .value-item {
+      text-align: center;
+      padding: var(--space-6);
+    }
+
+    .value-number {
+      font-size: var(--text-4xl);
+      font-weight: 700;
+      color: var(--color-accent-gold);
+      margin-bottom: var(--space-4);
+      display: block;
+    }
+
+    .value-item h3 {
+      font-size: var(--text-xl);
+      font-weight: 600;
+      color: white;
+      margin-bottom: var(--space-4);
+    }
+
+    .value-item p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-title {
+        font-size: var(--text-4xl);
+      }
+
+      .about-subtitle {
+        font-size: var(--text-xl);
+      }
+
+      .orb-animation {
+        width: 150px;
+        height: 150px;
+      }
+
+      .orb {
+        width: 60px;
+        height: 60px;
+      }
+
+      .ring-1 { width: 90px; height: 90px; }
+      .ring-2 { width: 120px; height: 120px; }
+      .ring-3 { width: 150px; height: 150px; }
+
+      .grid-cols-2,
+      .grid-cols-3 {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: row !important;
+      }
+
+      .timeline-marker {
+        left: 20px;
+      }
+
+      .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+    }
+  </style>
 </body>
 </html>

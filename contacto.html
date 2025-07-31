@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - OROBE</title>
+  <meta name="description" content="Contacta con OROBE. Estamos aquí para ayudarte con cualquier consulta sobre nuestra colección exclusiva.">
+  
+  <!-- Fonts -->
+  <!-- Using system Sans Serif fonts for brand consistency -->
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/modern-style.css">
+</head>
+<body>
+  <!-- Modern Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/Unknown.png" alt="OROBE Logo">
+        <h1>OROBE</h1>
+      </div>
+      
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-translate="home">Inicio</a></li>
+          <li><a href="productos.html" class="nav-link" data-translate="products">Productos</a></li>
+          <li><a href="sabermas.html" class="nav-link" data-translate="about">Sobre Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link" data-translate="contact">Contacto</a></li>
+        </ul>
+        
+        <div class="language-toggle">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1 class="contact-title" data-translate="contact-title">Contacto</h1>
+        <p class="contact-subtitle" data-translate="contact-subtitle">
+          Estamos aquí para ayudarte
+        </p>
+        <p class="contact-description" data-translate="contact-description">
+          ¿Tienes alguna pregunta sobre nuestra colección? ¿Necesitas información sobre disponibilidad o envíos? 
+          No dudes en contactarnos. Estaremos encantados de ayudarte.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-1" style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- Email Contact Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title" data-translate="email-title">Correo Electrónico</h3>
+          <p class="contact-card-description" data-translate="email-description">
+            Para consultas generales, información sobre productos o colaboraciones
+          </p>
+          <a href="mailto:orobe@proton.me" class="contact-email">orobe@proton.me</a>
+        </div>
+
+        <!-- Response Time Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title" data-translate="response-title">Tiempo de Respuesta</h3>
+          <p class="contact-card-description" data-translate="response-description">
+            Nos comprometemos a responder todas las consultas en un plazo máximo de 24-48 horas durante días laborables.
+          </p>
+        </div>
+
+        <!-- Philosophy Card -->
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title" data-translate="service-title">Atención Personalizada</h3>
+          <p class="contact-card-description" data-translate="service-description">
+            Cada consulta es importante para nosotros. Ofrecemos atención personalizada para garantizar 
+            la mejor experiencia con OROBE.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="section" style="background: var(--color-background-alt);">
+    <div class="container">
+      <div class="text-center">
+        <h2 data-translate="cta-title">¿Listo para conectar con OROBE?</h2>
+        <p data-translate="cta-description" style="font-size: var(--text-lg); max-width: 600px; margin: 0 auto var(--space-8);">
+          Escríbenos y descubre cómo OROBE puede formar parte de tu estilo de vida.
+        </p>
+        <a href="mailto:orobe@proton.me" class="btn btn-primary btn-lg" data-translate="cta-button">
+          Enviar Correo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="container">
+        <p class="footer-text" data-translate="copyright">© 2025 OROBE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/language-switcher.js"></script>
+  <script src="js/animations.js"></script>
+
+  <style>
+    /* Contact Hero Section */
+    .contact-hero {
+      padding: calc(80px + var(--space-20)) 0 var(--space-20);
+      background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+      text-align: center;
+    }
+
+    .contact-hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-title {
+      font-size: var(--text-5xl);
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+      letter-spacing: 0.02em;
+    }
+
+    .contact-subtitle {
+      font-size: var(--text-2xl);
+      color: var(--color-accent);
+      margin-bottom: var(--space-6);
+      font-weight: 500;
+    }
+
+    .contact-description {
+      font-size: var(--text-lg);
+      color: var(--color-text-light);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+      background: white;
+      border-radius: var(--radius-2xl);
+      padding: var(--space-10);
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition-base);
+      border: 1px solid var(--color-border);
+      text-align: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .contact-icon {
+      margin-bottom: var(--space-6);
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-card-title {
+      font-size: var(--text-2xl);
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .contact-card-description {
+      font-size: var(--text-base);
+      color: var(--color-text-light);
+      margin-bottom: var(--space-6);
+      line-height: 1.6;
+    }
+
+    .contact-email {
+      font-size: var(--text-xl);
+      font-weight: 600;
+      color: var(--color-accent);
+      text-decoration: none;
+      padding: var(--space-4) var(--space-6);
+      border: 2px solid var(--color-accent);
+      border-radius: var(--radius-lg);
+      display: inline-block;
+      transition: all var(--transition-base);
+    }
+
+    .contact-email:hover {
+      background: var(--color-accent);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-title {
+        font-size: var(--text-4xl);
+      }
+      
+      .contact-subtitle {
+        font-size: var(--text-xl);
+      }
+      
+      .contact-hero {
+        padding: calc(80px + var(--space-12)) 0 var(--space-12);
+      }
+      
+      .contact-card {
+        padding: var(--space-8);
+        margin-bottom: var(--space-6);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-email {
+        font-size: var(--text-lg);
+        padding: var(--space-3) var(--space-5);
+      }
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,540 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+
+/* ======== MODERN CSS VARIABLES ======== */
+:root {
+  /* Colors - OROBE Brand Palette */
+  --color-primary: #1a1a1a;           /* Deep black for orb symbol */
+  --color-secondary: #ffffff;          /* Pure white */
+  --color-accent: #8B2635;            /* Deep burgundy/maroon from logo */
+  --color-accent-light: #A63446;      /* Lighter burgundy */
+  --color-accent-gold: #D4AF37;       /* Refined gold accent */
+  --color-text: #2c2c2c;              /* Softer black for text */
+  --color-text-light: #5a5a5a;        /* Medium gray */
+  --color-text-muted: #888888;        /* Light gray */
+  --color-background: #ffffff;         /* Pure white */
+  --color-background-alt: #fafafa;     /* Off-white */
+  --color-border: #e8e8e8;            /* Subtle border */
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  --gradient-accent: linear-gradient(135deg, #8B2635 0%, #A63446 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(139, 38, 53, 0.1) 100%);
+  --gradient-orb: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+  
+  /* Typography */
+  --font-primary: 'Playfair Display', serif;
+  --font-display: 'Playfair Display', serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-out;
+  --transition-base: 0.3s ease-out;
+  --transition-slow: 0.5s ease-out;
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+}
+
+/* ======== RESET & BASE STYLES ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ======== TYPOGRAPHY ======== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-4xl); }
+h3 { font-size: var(--text-3xl); }
+h4 { font-size: var(--text-2xl); }
+h5 { font-size: var(--text-xl); }
+h6 { font-size: var(--text-lg); }
+
+p {
+  margin-bottom: var(--space-4);
+  color: var(--color-text-light);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* ======== LAYOUT UTILITIES ======== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 var(--space-6);
+}
+
+.section {
+  padding: var(--space-20) 0;
+}
+
+.section-sm {
+  padding: var(--space-12) 0;
+}
+
+.section-lg {
+  padding: var(--space-24) 0;
+}
+
+/* ======== GRID SYSTEM ======== */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ======== MODERN HEADER ======== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-4) 0;
+  z-index: var(--z-fixed);
+  transition: all var(--transition-base);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo h1 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+/* ======== NAVIGATION ======== */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--space-6);
+  margin: 0;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width var(--transition-base);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ======== LANGUAGE TOGGLE ======== */
+.language-toggle {
+  display: flex;
+  background: var(--color-background-alt);
+  border-radius: var(--radius-full);
+  padding: var(--space-1);
+  border: 1px solid var(--color-border);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lang-btn.active {
+  background: var(--color-accent);
+  color: white;
+}
+
+.lang-btn:hover:not(.active) {
+  color: var(--color-text);
+}
+
+/* ======== HERO SECTION ======== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-hero);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 var(--space-6);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: var(--text-6xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-6);
+  letter-spacing: 0.05em;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  font-size: var(--text-2xl);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-8);
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-description {
+  font-size: var(--text-lg);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-10);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+/* ======== BUTTONS ======== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4) var(--space-8);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-accent);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-lg {
+  padding: var(--space-5) var(--space-10);
+  font-size: var(--text-lg);
+}
+
+/* ======== CARDS ======== */
+.card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  border: 1px solid var(--color-border);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.card-title {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.card-description {
+  color: var(--color-text-light);
+  margin-bottom: var(--space-6);
+}
+
+/* ======== ANIMATIONS ======== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-12) 0 var(--space-8);
+  margin-top: var(--space-20);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--text-sm);
+}
+
+/* ======== BRAND NAME STYLING ======== */
+/* Make all OROBE brand names appear in characteristic red */
+.logo h1,
+.hero-title,
+.about-title,
+h1:contains("OROBE"),
+h2:contains("OROBE"),
+h3:contains("OROBE") {
+  color: var(--color-accent) !important;
+}
+
+/* Specific targeting for text content containing OROBE */
+*:not(script):not(style) {
+  /* This will be handled by JavaScript for dynamic content */
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 768px) {
+  :root {
+    --text-6xl: 2.5rem;
+    --text-5xl: 2rem;
+    --text-4xl: 1.75rem;
+  }
+  
+  .header-content {
+    padding: 0 var(--space-4);
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-content {
+    padding: 0 var(--space-4);
+  }
+  
+  .container {
+    padding: 0 var(--space-4);
+  }
+  
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .section {
+    padding: var(--space-12) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--text-xl);
+  }
+  
+  .btn-lg {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-base);
+  }
+}

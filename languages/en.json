@@ -1,0 +1,230 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "OROBE",
+      "subtitle": "Minimalist Design. Timeless Elegance.",
+      "description": "Discover a new dimension of luxury with our exclusive collection that redefines modern sophistication.",
+      "cta": "Explore Collection"
+    },
+    "welcome": {
+      "title": "Welcome to OROBE",
+      "description": "This is the official OROBE website. Discover our philosophy and minimalist design that transcends temporal trends.",
+      "cta": "Learn More"
+    },
+    "products": {
+      "title": "Our Collection",
+      "description": "Each piece tells a story of exceptional craftsmanship and visionary design.",
+      "cta": "View Products",
+      "items": {
+        "product1": {
+          "title": "Product 1",
+          "description": "Exclusive design that combines elegance and functionality"
+        },
+        "product2": {
+          "title": "Product 2", 
+          "description": "Exceptional craftsmanship in every detail"
+        }
+      }
+    },
+    "values": {
+      "timeless": {
+        "title": "Timeless",
+        "description": "Designs that transcend temporal trends"
+      },
+      "exclusive": {
+        "title": "Exclusive",
+        "description": "Unique limited edition pieces"
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Exceptional craftsmanship in every detail"
+      }
+    }
+  },
+  "products": {
+    "title": "OROBE Products",
+    "subtitle": "Exclusive Collection",
+    "description": "Each piece in our collection represents the perfect harmony between minimalist design and exceptional functionality.",
+    "filter": {
+      "all": "All",
+      "new": "New",
+      "featured": "Featured"
+    },
+    "items": {
+      "product1": {
+        "name": "Elegant Product 1",
+        "description": "Exclusive design that combines minimalist elegance with exceptional functionality",
+        "cta": "View Details"
+      },
+      "product2": {
+        "name": "Sophisticated Product 2", 
+        "description": "Exceptional craftsmanship that reflects the essence of the OROBE brand",
+        "cta": "View Details"
+      },
+      "product3": {
+        "name": "Innovative Product 3",
+        "description": "The latest addition to our exclusive collection",
+        "cta": "View Details"
+      },
+      "product4": {
+        "name": "Exclusive Product 4",
+        "description": "A new creation that will redefine elegance",
+        "cta": "Coming Soon"
+      }
+    },
+    "badges": {
+      "new": "New",
+      "featured": "Featured",
+      "coming": "Coming Soon"
+    },
+    "quickView": "Quick View",
+    "comingSoon": "Coming Soon"
+  },
+  "about": {
+    "title": "About OROBE",
+    "subtitle": "Where tradition meets innovation",
+    "about-title": "About OROBE",
+    "about-subtitle": "Where tradition meets innovation",
+    "philosophy-title": "Our Philosophy",
+    "philosophy-subtitle": "We believe in the beauty of simplicity and the power of conscious design",
+    "philosophy-values-timeless-title": "Timelessness",
+    "philosophy-values-timeless-description": "We create pieces that transcend passing trends, designed to endure in both style and quality.",
+    "philosophy-values-excellence-title": "Excellence",
+    "philosophy-values-excellence-description": "Every detail is meticulously considered, from conception to the final realization of each product.",
+    "philosophy-values-authenticity-title": "Authenticity",
+    "philosophy-values-authenticity-description": "We maintain the integrity of our values in every decision, creating genuine and meaningful products.",
+    "philosophy-timeless-title": "Timelessness",
+    "philosophy-timeless-description": "We create pieces that transcend passing trends, designed to endure in both style and quality.",
+    "philosophy-excellence-title": "Excellence",
+    "philosophy-excellence-description": "Every detail is meticulously considered, from conception to the final realization of each product.",
+    "philosophy-authenticity-title": "Authenticity",
+    "philosophy-authenticity-description": "We maintain the integrity of our values in every decision, creating genuine and meaningful products.",
+    "meaning-title": "The Meaning of OROBE",
+    "meaning-content1": "The word \"orb\" comes from the Latin orbis, meaning \"circle\" or \"world\". This root is associated with the idea of totality and perfection, evoking the perfect form of the circle and its representation of the universe.",
+    "meaning-content2": "It is common to find in ancient iconography gods and authority figures holding an orb, as an emblem of dominion and sovereignty over the world. This vision inspires the OROBE brand to convey balance, elegance and universality in each of its creations.",
+    "etymology-meaning-1": "Perfect circle",
+    "etymology-meaning-2": "World, universe",
+    "etymology-meaning-3": "Totality, perfection",
+    "journey-title": "Our Journey",
+    "journey-subtitle": "The evolution of a vision into a tangible reality",
+    "timeline-2023-title": "The Vision",
+    "timeline-2023-description": "The idea is born to create a brand that combines classic elegance with modern functionality, inspired by universal symbols of perfection.",
+    "timeline-2024-title": "Development",
+    "timeline-2024-description": "We begin the design and development process, collaborating with specialized artisans to bring our first creations to life.",
+    "timeline-2025-title": "Launch",
+    "timeline-2025-description": "OROBE presents itself to the world with its first collection, establishing new standards in minimalist design and exceptional quality.",
+    "values-title": "Our Values",
+    "values-subtitle": "The principles that guide every decision and every creation",
+    "values-sustainability-title": "Sustainability",
+    "values-sustainability-description": "Committed to responsible practices that respect our planet and future generations.",
+    "values-innovation-title": "Innovation",
+    "values-innovation-description": "We constantly explore new ways to improve and evolve, always maintaining our essence.",
+    "values-craftsmanship-title": "Craftsmanship",
+    "values-craftsmanship-description": "We value manual work and the dedication that only true artisans can provide.",
+    "values-community-title": "Community",
+    "values-community-description": "We believe in building lasting relationships with our customers, collaborators and society.",
+    "meaning": {
+      "title": "The Meaning of OROBE",
+      "content1": "The word \"orb\" comes from the Latin orbis, meaning \"circle\" or \"world\". This root is associated with the idea of totality and perfection, evoking the perfect form of the circle and its representation of the universe.",
+      "content2": "It is common to find in ancient iconography gods and authority figures holding an orb, as an emblem of dominion and sovereignty over the world. This vision inspires the OROBE brand to convey balance, elegance and universality in each of its creations."
+    },
+    "etymology": {
+      "title": "ORBE",
+      "origin": "From Latin orbis",
+      "meanings": {
+        "1": "Perfect circle",
+        "2": "World, universe", 
+        "3": "Totality, perfection"
+      }
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "subtitle": "We believe in the beauty of simplicity and the power of conscious design",
+      "values": {
+        "timeless": {
+          "title": "Timelessness",
+          "description": "We create pieces that transcend passing trends, designed to endure in both style and quality."
+        },
+        "excellence": {
+          "title": "Excellence", 
+          "description": "Every detail is meticulously considered, from conception to the final realization of each product."
+        },
+        "authenticity": {
+          "title": "Authenticity",
+          "description": "We maintain the integrity of our values in every decision, creating genuine and meaningful products."
+        }
+      }
+    },
+    "journey": {
+      "title": "Our Journey",
+      "subtitle": "The evolution of a vision into a tangible reality",
+      "timeline": {
+        "2023": {
+          "title": "The Vision",
+          "description": "The idea is born to create a brand that combines classic elegance with modern functionality, inspired by universal symbols of perfection."
+        },
+        "2024": {
+          "title": "Development", 
+          "description": "We begin the design and development process, collaborating with specialized artisans to bring our first creations to life."
+        },
+        "2025": {
+          "title": "Launch",
+          "description": "OROBE presents itself to the world with its first collection, establishing new standards in minimalist design and exceptional quality."
+        }
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide every decision and every creation",
+      "items": {
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Committed to responsible practices that respect our planet and future generations."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We constantly explore new ways to improve and evolve, always maintaining our essence."
+        },
+        "craftsmanship": {
+          "title": "Craftsmanship",
+          "description": "We value manual work and the dedication that only true artisans can provide."
+        },
+        "community": {
+          "title": "Community",
+          "description": "We believe in building lasting relationships with our customers, collaborators and society."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here to help you",
+    "description": "Do you have any questions about our collection? Need information about availability or shipping? Don't hesitate to contact us. We'll be happy to help you.",
+    "email": {
+      "title": "Email",
+      "description": "For general inquiries, product information or collaborations"
+    },
+    "response": {
+      "title": "Response Time",
+      "description": "We commit to responding to all inquiries within a maximum of 24-48 hours during business days."
+    },
+    "service": {
+      "title": "Personalized Service",
+      "description": "Every inquiry is important to us. We offer personalized attention to guarantee the best experience with OROBE."
+    },
+    "cta": {
+      "title": "Ready to connect with OROBE?",
+      "description": "Write to us and discover how OROBE can be part of your lifestyle.",
+      "button": "Send Email"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 OROBE. All rights reserved."
+  }
+}
