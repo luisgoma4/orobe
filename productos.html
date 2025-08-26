@@ -16,13 +16,22 @@
   <link rel="stylesheet" href="css/products.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <img src="images/Unknown.png" alt="OROBE Logo" class="loading-logo">
+      <div class="loading-text">OROBE</div>
+      <div class="loading-subtitle">Cargando...</div>
+    </div>
+  </div>
+
   <!-- Modern Header -->
   <header>
     <div class="header-content">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="images/Unknown.png" alt="OROBE Logo">
         <h1>OROBE</h1>
-      </div>
+      </a>
       
       <nav class="nav">
         <ul class="nav-links">
@@ -90,7 +99,7 @@
     <div class="container">
       <div class="products-grid" id="productsGrid">
         
-        <!-- Product 1 -->
+        <!-- Product 1
         <article class="product-card" data-category="featured new">
           <div class="product-image-wrapper">
             <img src="images/producto1-frontal.jpeg" alt="Producto 1" class="product-img front" loading="lazy">
@@ -120,7 +129,7 @@
           </div>
         </article>
 
-        <!-- Product 2 -->
+         Product 2 
         <article class="product-card" data-category="featured">
           <div class="product-image-wrapper">
             <img src="images/producto2-frontal.jpeg" alt="Producto 2" class="product-img front" loading="lazy">
@@ -147,7 +156,7 @@
             <div class="product-price">€399</div>
             <button class="btn btn-primary product-cta" data-translate="product2-cta">Ver Detalles</button>
           </div>
-        </article>
+        </article> -->
 
         <!-- Product 3 (Placeholder) -->
         <article class="product-card" data-category="new">
@@ -171,9 +180,9 @@
           </div>
           
           <div class="product-info">
-            <h3 class="product-name" data-translate="product3-name">Producto Innovador 3</h3>
-            <p class="product-description" data-translate="product3-description">La última incorporación a nuestra colección exclusiva</p>
-            <div class="product-price">€249</div>
+            <h3 class="product-name" data-translate="product3-name">Producto Único</h3>
+            <p class="product-description" data-translate="product3-description">La marca en si misma</p>
+            <div class="product-price">€5000</div>
             <button class="btn btn-primary product-cta" data-translate="product3-cta">Ver Detalles</button>
           </div>
         </article>
@@ -188,7 +197,8 @@
                   <circle cx="8.5" cy="8.5" r="1.5"/>
                   <polyline points="21,15 16,10 5,21"/>
                 </svg>
-                <p>Próximamente</p>
+                <p class="product-description" data-translate="product4-cta">Próximamente</p>
+                <!-- <p>Próximamente</p> -->
               </div>
             </div>
             
@@ -237,6 +247,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="js/loading.js"></script>
   <script src="js/language-switcher.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/products.js"></script>

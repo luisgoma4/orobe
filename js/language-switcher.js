@@ -21,8 +21,24 @@ class LanguageSwitcher {
             
             this.translations.es = await esResponse.json();
             this.translations.en = await enResponse.json();
+            
+            console.log('Translations loaded:', this.translations);
         } catch (error) {
             console.error('Error loading translations:', error);
+            // Fallback: try relative paths
+            try {
+                const [esResponse, enResponse] = await Promise.all([
+                    fetch('languages/es.json'),
+                    fetch('languages/en.json')
+                ]);
+                
+                this.translations.es = await esResponse.json();
+                this.translations.en = await enResponse.json();
+                
+                console.log('Translations loaded with fallback:', this.translations);
+            } catch (fallbackError) {
+                console.error('Fallback translation loading failed:', fallbackError);
+            }
         }
     }
 

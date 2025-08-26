@@ -68,14 +68,14 @@
         "cta": "Ver Detalles"
       },
       "product3": {
-        "name": "Producto Innovador 3",
-        "description": "La última incorporación a nuestra colección exclusiva",
+        "name": "Producto Único",
+        "description": "La marca en si misma",
         "cta": "Ver Detalles"
       },
       "product4": {
         "name": "Producto Exclusivo 4",
         "description": "Una nueva creación que redefinirá la elegancia",
-        "cta": "Próximamente"
+        "cta": "Nuevos Productos Próximamente"
       }
     },
     "badges": {

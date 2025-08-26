@@ -15,13 +15,22 @@
   <link rel="stylesheet" href="css/modern-style.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <img src="images/Unknown.png" alt="OROBE Logo" class="loading-logo">
+      <div class="loading-text">OROBE</div>
+      <div class="loading-subtitle">Cargando...</div>
+    </div>
+  </div>
+
   <!-- Modern Header -->
   <header>
     <div class="header-content">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="images/Unknown.png" alt="OROBE Logo">
         <h1>OROBE</h1>
-      </div>
+      </a>
       
       <nav class="nav">
         <ul class="nav-links">
@@ -232,6 +241,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="js/loading.js"></script>
   <script src="js/language-switcher.js"></script>
   <script src="js/animations.js"></script>
 

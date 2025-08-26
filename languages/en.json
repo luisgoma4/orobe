@@ -68,14 +68,14 @@
         "cta": "View Details"
       },
       "product3": {
-        "name": "Innovative Product 3",
-        "description": "The latest addition to our exclusive collection",
+        "name": "Unique Product",
+        "description": "The Brand it self",
         "cta": "View Details"
       },
       "product4": {
         "name": "Exclusive Product 4",
         "description": "A new creation that will redefine elegance",
-        "cta": "Coming Soon"
+        "cta": "New Products Coming Soon"
       }
     },
     "badges": {

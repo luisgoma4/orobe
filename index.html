@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -15,13 +15,22 @@
   <link rel="stylesheet" href="css/modern-style.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <img src="images/Unknown.png" alt="OROBE Logo" class="loading-logo">
+      <div class="loading-text">OROBE</div>
+      <div class="loading-subtitle">Cargando...</div>
+    </div>
+  </div>
+
   <!-- Modern Header -->
   <header>
     <div class="header-content">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="images/Unknown.png" alt="OROBE Logo">
         <h1>OROBE</h1>
-      </div>
+      </a>
       
       <nav class="nav">
         <ul class="nav-links">
@@ -42,7 +51,8 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-title" data-translate="hero-title">OROBE</h1>
+      <img src="images/Unknown.png" alt="OROBE Logo" class="logologo">
+      <h1 class="logologoName" data-translate="hero-title">OROBE</h1>
       <p class="hero-subtitle" data-translate="hero-subtitle">Diseño Minimalista. Elegancia Atemporal.</p>
       <p class="hero-description" data-translate="hero-description">
         Descubre una nueva dimensión del lujo con nuestra colección exclusiva que redefine la sofisticación moderna.
@@ -76,8 +86,8 @@
         </p>
       </div>
       
-      <div class="grid grid-cols-2" style="gap: var(--space-8);">
-        <!-- Product Preview 1 -->
+     <!--  <div class="grid grid-cols-2" style="gap: var(--space-8);">
+        Product Preview 1
         <div class="product-preview">
           <div class="product-image-container">
             <img src="images/producto1-frontal.jpeg" alt="Producto 1" class="product-image front">
@@ -89,7 +99,7 @@
           </div>
         </div>
         
-        <!-- Product Preview 2 -->
+        Product Preview 2 
         <div class="product-preview">
           <div class="product-image-container">
             <img src="images/producto2-frontal.jpeg" alt="Producto 2" class="product-image front">
@@ -100,13 +110,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
       
       <div class="text-center" style="margin-top: var(--space-12);">
         <a href="productos.html" class="btn btn-primary btn-lg" data-translate="products-cta">Ver Productos</a>
       </div>
     </div>
-  </section>
+  </section> 
 
   <!-- Brand Values Section -->
   <section class="section">
@@ -156,6 +166,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="js/loading.js"></script>
   <script src="js/language-switcher.js"></script>
   <script src="js/animations.js"></script>
 
